@@ -1,5 +1,6 @@
 #include "libos-solver.h"
 
-explicit LibosSolver(std::istream& data_bar) {
-    readCsv(data_bar);
-}
+LibosSolver::LibosSolver(std::istream&& data_bar) {
+    (void)data_bar;
+    std::cout << "call\n";
+};

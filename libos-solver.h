@@ -1,9 +1,7 @@
 #include <iostream>
 
-class LibosSolver final {
+class LibosSolver {
     public:
-        explicit LibosSolver(std::istream& data_bar) {
-            readCsv(data_bar);
-        }
-
+        LibosSolver(std::istream&& data_bar);
+        ~LibosSolver() = default;
     };

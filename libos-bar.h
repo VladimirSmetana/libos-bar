@@ -1,9 +1,13 @@
 
 #include <string>
 
+#include "libos-solver.h"
+
+
 class LibosBar final : public LibosSolver {
 public:
-    explicit LibosBar(const std::string& data_file);
+    explicit LibosBar();
+    ~LibosBar() = default;
 };
 
 

@@ -5,7 +5,16 @@
 
 #include "libos-bar.h"
 
-LibosBar::LibosBar(const std::string& data_file):LibosSolver(std::ifstream(data_file))
+namespace data
+{
+    namespace 
+    {
+        static constexpr char datafile[] = "data.csv";
+    }
+}
+
+
+LibosBar::LibosBar():LibosSolver(std::ifstream(data::datafile))
 {
     std::cout << "call\n";
 };
