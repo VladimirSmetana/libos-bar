@@ -1,14 +1,8 @@
 #include <fstream>
-#include <vector>
 #include <sstream>
+#include <vector>
 
 #include "libos-solver.h"
-
-LibosSolver::LibosSolver(std::istream&& data_bar) {
-    (void)data_bar;
-    std::cout << "call\n";
-};
-
 
 void readCsv(std::istream& data_bar) {
     std::string line;
@@ -37,3 +31,10 @@ void readCsv(std::istream& data_bar) {
 
     // Здесь можно добавить дополнительную логику для обработки данных
 }
+
+LibosSolver::LibosSolver(std::istream&& data_bar) {
+    readCsv(data_bar);
+    std::cout << "call\n";
+};
+
+
