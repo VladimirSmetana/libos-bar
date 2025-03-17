@@ -6,7 +6,7 @@
 
 class LibosBar final : public LibosSolver {
 public:
-    explicit LibosBar();
+    explicit LibosBar(std::string datafile);
     ~LibosBar() = default;
 };
 

@@ -1,6 +1,6 @@
 #include "libos-bar.h"
 
 int main() {
-    LibosBar file;
+    LibosBar file("data.csv");
     return 0;
 }
